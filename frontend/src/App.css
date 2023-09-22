@@ -70,3 +70,8 @@
   height: auto;
   padding: 10px;
 }
+
+#footer {
+  height: 10rem;
+  background-color: #61dafbaa;
+}
