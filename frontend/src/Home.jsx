@@ -51,30 +51,25 @@ function Home() {
           </Col>
         </Row>
       </header>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">
-            <img src={brand} className="b-logo" alt="logo" />
+            <img
+              alt=""
+              src={brand}
+              width="30"
+              height="30"
+              className="d-inline-block align-top b-logo"
+            />{" "}
+            React Bootstrap
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Toggle />
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">
-                <Form>
-                  <Form.Group>
-                    <Form.Control
-                      required
-                      type="text"
-                      placeholder="Search"
-                      defaultValue="Search"
-                    />
-                  </Form.Group>
-                </Form>
-              </Nav.Link>
-              <NavDropdown title="Kategori" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">
-                  Daging Sapi
-                </NavDropdown.Item>
+              <Nav.Link href="#features">Features</Nav.Link>
+              <Nav.Link href="#pricing">Pricing</Nav.Link>
+              <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
                 </NavDropdown.Item>
@@ -86,8 +81,22 @@ function Home() {
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#link">Link</Nav.Link>
+              <Form inline>
+                <InputGroup>
+                  <Form.Control
+                    placeholder="Username"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                  <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
+                </InputGroup>
+              </Form>
             </Nav>
+          </Navbar.Collapse>
+          <Navbar.Collapse className="justify-content-end">
+            <Navbar.Text>
+              Signed in as: <a href="#login">Mark Otto</a>
+            </Navbar.Text>
           </Navbar.Collapse>
         </Container>
       </Navbar>
