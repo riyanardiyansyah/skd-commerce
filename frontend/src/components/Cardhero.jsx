@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CardHeader from "react-bootstrap/esm/CardHeader";
 import "./Component.css";
-import bird from "./image/bird.png";
+import bird from "./image/pigeon.png";
 import chicken from "./image/chicken.png";
 import cow from "./image/cow.png";
 import duck from "./image/duck.png";
@@ -22,8 +22,8 @@ function Cardhero() {
       <Row xs={6} md={4} className="g-4">
         <Col>
           <a href="/detail" className="cardherf">
-            <Card>
-              <Card.Img variant="top" src={cow} />
+            <Card className="card-item">
+              <Card.Img variant="top" src={cow} className="img-card" />
               <Card.Body>
                 <Card.Title>Sapi</Card.Title>
                 <Card.Text hidden>
@@ -36,8 +36,8 @@ function Cardhero() {
           </a>
         </Col>
         <Col>
-          <Card>
-            <Card.Img variant="top" src={bird} />
+          <Card className="card-item">
+            <Card.Img variant="top" src={bird} className="img-card" />
             <Card.Body>
               <Card.Title>Burung</Card.Title>
               <Card.Text hidden>
@@ -49,8 +49,8 @@ function Cardhero() {
           </Card>
         </Col>
         <Col>
-          <Card>
-            <Card.Img variant="top" src={goat} />
+          <Card className="card-item">
+            <Card.Img variant="top" src={goat} className="img-card" />
             <Card.Body>
               <Card.Title>kambing</Card.Title>
               <Card.Text hidden>
@@ -62,8 +62,8 @@ function Cardhero() {
           </Card>
         </Col>
         <Col>
-          <Card>
-            <Card.Img variant="top" src={duck} />
+          <Card className="card-item">
+            <Card.Img variant="top" src={duck} className="img-card" />
             <Card.Body>
               <Card.Title>Bebek</Card.Title>
               <Card.Text hidden>
@@ -75,8 +75,8 @@ function Cardhero() {
           </Card>
         </Col>
         <Col>
-          <Card>
-            <Card.Img variant="top" src={chicken} />
+          <Card className="card-item">
+            <Card.Img variant="top" src={chicken} className="img-card" />
             <Card.Body>
               <Card.Title>Ayam</Card.Title>
               <Card.Text hidden>
@@ -88,8 +88,8 @@ function Cardhero() {
           </Card>
         </Col>
         <Col>
-          <Card>
-            <Card.Img variant="top" src={rabbit} />
+          <Card className="card-item">
+            <Card.Img variant="top" src={rabbit} className="img-card" />
             <Card.Body>
               <Card.Title>Kelinci</Card.Title>
               <Card.Text hidden>
@@ -101,8 +101,8 @@ function Cardhero() {
           </Card>
         </Col>
         <Col>
-          <Card>
-            <Card.Img variant="top" src={sheep} />
+          <Card className="card-item">
+            <Card.Img variant="top" src={sheep} className="img-card" />
             <Card.Body>
               <Card.Title>Domba</Card.Title>
               <Card.Text hidden>
@@ -114,8 +114,8 @@ function Cardhero() {
           </Card>
         </Col>
         <Col>
-          <Card>
-            <Card.Img variant="top" src={buffalo} />
+          <Card className="card-item">
+            <Card.Img variant="top" src={buffalo} className="img-card" />
             <Card.Body>
               <Card.Title>Kerbau</Card.Title>
               <Card.Text hidden>

@@ -12,13 +12,14 @@ import smartphone from "./smartphone.png";
 import brand from "./brand_skd.png";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
+import Button from "react-bootstrap/esm/Button";
 
 import "./App.css";
 
 function Home() {
   return (
     <>
-      <header className="header-nav">
+      <header className="header-nav" fixed="top">
         <Row>
           <Col>
             <Nav>
@@ -51,7 +52,7 @@ function Home() {
           </Col>
         </Row>
       </header>
-      <Navbar className="bg-body-tertiary">
+      <Navbar className="bg-body-tertiary" sticky="top">
         <Container>
           <Navbar.Brand href="#home">
             <img
@@ -61,7 +62,6 @@ function Home() {
               height="30"
               className="d-inline-block align-top b-logo"
             />{" "}
-            React Bootstrap
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -94,8 +94,14 @@ function Home() {
             </Nav>
           </Navbar.Collapse>
           <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text>
-              Signed in as: <a href="#login">Mark Otto</a>
+            <Navbar.Text className="vl">
+              <Button href="/login" variant="outline-success">
+                Login
+              </Button>
+              &nbsp;
+              <Button href="/register" variant="btn btn-success">
+                Register
+              </Button>
             </Navbar.Text>
           </Navbar.Collapse>
         </Container>

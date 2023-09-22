@@ -64,3 +64,9 @@
   width: 3rem;
   height: auto;
 }
+
+.vl {
+  border-left: 1px solid rgb(221, 223, 221);
+  height: auto;
+  padding: 10px;
+}
