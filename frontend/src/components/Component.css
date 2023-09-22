@@ -1,0 +1,17 @@
+.mycard {
+  box-shadow: 1px solid black;
+}
+
+.cardherf {
+  text-decoration: none;
+}
+
+.carousel-hero {
+  width: 62rem;
+  height: 42rem;
+  margin: 0 auto;
+}
+
+.radius {
+  border-radius: 3%;
+}
